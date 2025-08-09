@@ -13,19 +13,7 @@ public class CricketCoach implements Coach {
         System.out.println("In constructor: " + getClass().getSimpleName());
     }
 
-    //defining our init method
-    @PostConstruct
-    public void init(){
-        System.out.println("init method called");
-        System.out.println("in init method:" + getClass().getSimpleName());
-    }
 
-    //defining our dispose method
-    @PreDestroy
-    public void dispose(){
-        System.out.println("dispose method called");
-        System.out.println("in dispose method:" + getClass().getSimpleName());
-    }
 
     @Override
     public String getDailyWorkout() {
